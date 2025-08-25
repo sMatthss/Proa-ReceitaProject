@@ -1,0 +1,53 @@
+/*1.reset css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*box sizing é uma propriedade para não deixar os elementos sairem da caixa*/
+}
+
+/*2. Estilos gerais para a pagina*/
+
+body{
+    font-family: 'Georgia', serif;  /*Uma fonte mais elegante*/
+    background-color: #f5f5f5;
+    color: #333;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.recipe-card{
+    width: 350px;   /*Uma largura fixa para o card*/
+    background-color: #ffffff;
+    border-radius: 15px;    /*Cantos arredondados para um visual*/
+
+    box-shadow: 0 8 16px rgba(0, 0, 0 ,0.1);    /*Uma sombra sutil no card*/
+
+    overflow: hidden;/*CANTOS ARREDONDADOS NA IMAGEM: Esta propriedade "corta" qualquer conteúdo filho (como a nossa imagem) que tente "vazar" para fora dos cantos arredondados do card.*/
+}
+
+.recipe-image{
+    width: 100%;    /* FAZ A IMAGEM SER RESPONSIVA AO SEU CONTAINER:A imagem ocupará 100% da largura do seu elemento pai (o .recipe-card). Sua altura se ajustará automaticamente para manter a proporção. */
+    display: block;    /* Garante que o navegador renderize a imagem como um bloco, removendopequenos espaços que podem aparecer abaixo dela. É uma boa prática.*/
+}
+
+.recipe-content{
+    padding: 25px;    /* Usamos o padding aqui para dar um respiro INTERNO para todo o texto, afastando-o das bordas do card.*/
+}
+
+.recipe-title{
+    font-size: 1.5rem;
+    color: #4a4a4a;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.recipe-description{
+    font-size: 1rem;
+    line-height: 1.5;   /* Espaçamento entre as linhas do parágrafo */
+    color: #666;
+    margin-bottom: 0;   /* Remove a margem de baixo do último elemento */
+}
